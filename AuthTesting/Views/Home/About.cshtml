@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+<h2>Is User logged in: @User.Identity.IsAuthenticated</h2>
+<h2>Users email: @User.Identity.Name</h2>
+
+<a href="/account/logout">Log off</a>
+
